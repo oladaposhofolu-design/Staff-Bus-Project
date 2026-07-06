@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <a class="brand" href="/">🚌 Staff Bus Portal</a>
+        <div class="nav-links">
+          <a href="/morning">Morning Routes</a>
+          <a href="/afternoon">Afternoon Routes</a>
+          <a href="/buses">All Buses</a>
+          <a href="/search">Search</a>
+          <a href="/admin">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <h2 class="page-title">Admin Panel</h2>
+      <p class="page-subtitle">Add or update buses and their route information.</p>
+      <div class="details-layout">
+        <section class="panel">
+          <h3>Add New Bus</h3>
+          <form id="admin-form" class="form-grid">
+            <div class="field">
+              <label for="bus-id">Bus ID</label>
+              <input id="bus-id" required />
+            </div>
+            <div class="field">
+              <label for="bus-name">Bus Name</label>
+              <input id="bus-name" required />
+            </div>
+            <div class="field">
+              <label for="driver-name">Driver Name</label>
+              <input id="driver-name" />
+            </div>
+            <div class="field">
+              <label for="departure-time">Departure Time</label>
+              <input id="departure-time" />
+            </div>
+            <div class="field">
+              <label for="destination">Destination</label>
+              <input id="destination" />
+            </div>
+            <div class="field">
+              <label for="route-type">Route Type</label>
+              <select id="route-type-input">
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Both">Both</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="region">Region</label>
+              <input id="region" />
+            </div>
+            <div class="field">
+              <label for="notes">Notes</label>
+              <textarea id="notes"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Save Bus</button>
+          </form>
+        </section>
+        <section class="panel">
+          <h3>Current Buses</h3>
+          <div id="admin-buses" class="grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

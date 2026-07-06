@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Buses</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <a class="brand" href="/">🚌 Staff Bus Portal</a>
+        <div class="nav-links">
+          <a href="/morning">Morning Routes</a>
+          <a href="/afternoon">Afternoon Routes</a>
+          <a href="/buses">All Buses</a>
+          <a href="/search">Search</a>
+          <a href="/admin">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <h2 class="page-title">Search & Filter</h2>
+      <p class="page-subtitle">Find buses by ID, destination, or bus stop.</p>
+      <div class="card">
+        <div class="search-controls">
+          <div class="field">
+            <label for="search-input">Search term</label>
+            <input id="search-input" placeholder="Bus ID, destination, stop" />
+          </div>
+          <div class="field">
+            <label for="route-type">Route type</label>
+            <select id="route-type">
+              <option value="">All</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Both">Both</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="region-filter">Region</label>
+            <select id="region-filter">
+              <option value="">All</option>
+              <option value="North">North</option>
+              <option value="East">East</option>
+              <option value="West">West</option>
+              <option value="South">South</option>
+              <option value="Central">Central</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="search-btn">Search</button>
+        </div>
+        <div id="search-results" class="grid"></div>
+      </div>
+    </main>
+
+    <script src="/js/app.js"></script>
+  </body>
+</html>

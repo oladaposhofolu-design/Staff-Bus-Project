@@ -1,0 +1,12 @@
+{
+  "name": "staff-bus-project",
+  "version": "1.0.0",
+  "description": "Responsive staff bus routes portal with API endpoints",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

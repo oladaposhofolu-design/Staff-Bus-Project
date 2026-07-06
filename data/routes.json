@@ -1,0 +1,145 @@
+{
+  "buses": [
+    {
+      "id": "SB-101",
+      "name": "North Campus Shuttle",
+      "driverName": "Adebayo Musa",
+      "departureTime": "06:30",
+      "destination": "North Campus",
+      "routeType": "Morning",
+      "region": "North",
+      "morningSchedule": [
+        { "time": "06:30", "stop": "Main Gate" },
+        { "time": "06:45", "stop": "Finance Block" },
+        { "time": "07:00", "stop": "Library Junction" },
+        { "time": "07:20", "stop": "North Campus" }
+      ],
+      "afternoonSchedule": [
+        { "time": "14:45", "stop": "Main Gate" },
+        { "time": "15:00", "stop": "Library Junction" },
+        { "time": "15:20", "stop": "North Campus" }
+      ],
+      "stops": [
+        { "name": "Main Gate", "arrivalTime": "06:30", "zone": "Central" },
+        { "name": "Finance Block", "arrivalTime": "06:45", "zone": "Central" },
+        { "name": "Library Junction", "arrivalTime": "07:00", "zone": "North" },
+        { "name": "North Campus", "arrivalTime": "07:20", "zone": "North" }
+      ],
+      "notes": "Heavy traffic near the library during peak hours."
+    },
+    {
+      "id": "SB-102",
+      "name": "East Loop Express",
+      "driverName": "Tunde Alabi",
+      "departureTime": "06:40",
+      "destination": "Engineering Hub",
+      "routeType": "Morning",
+      "region": "East",
+      "morningSchedule": [
+        { "time": "06:40", "stop": "Health Center" },
+        { "time": "06:55", "stop": "Engineering Hall" },
+        { "time": "07:10", "stop": "Science Complex" },
+        { "time": "07:25", "stop": "Engineering Hub" }
+      ],
+      "afternoonSchedule": [
+        { "time": "15:10", "stop": "Engineering Hub" },
+        { "time": "15:25", "stop": "Science Complex" },
+        { "time": "15:40", "stop": "Health Center" }
+      ],
+      "stops": [
+        { "name": "Health Center", "arrivalTime": "06:40", "zone": "East" },
+        { "name": "Engineering Hall", "arrivalTime": "06:55", "zone": "East" },
+        { "name": "Science Complex", "arrivalTime": "07:10", "zone": "East" },
+        { "name": "Engineering Hub", "arrivalTime": "07:25", "zone": "East" }
+      ],
+      "notes": "Usually on time, but takes a longer loop on rainy days."
+    },
+    {
+      "id": "SB-103",
+      "name": "West Valley Bus",
+      "driverName": "Chinwe Okafor",
+      "departureTime": "06:50",
+      "destination": "Staff Quarters",
+      "routeType": "Afternoon",
+      "region": "West",
+      "morningSchedule": [
+        { "time": "06:50", "stop": "Admin Annex" },
+        { "time": "07:10", "stop": "Staff Quarters" }
+      ],
+      "afternoonSchedule": [
+        { "time": "14:30", "stop": "Staff Quarters" },
+        { "time": "14:50", "stop": "Admin Annex" },
+        { "time": "15:10", "stop": "Main Gate" }
+      ],
+      "stops": [
+        { "name": "Admin Annex", "arrivalTime": "06:50", "zone": "West" },
+        { "name": "Staff Quarters", "arrivalTime": "07:10", "zone": "West" },
+        { "name": "Main Gate", "arrivalTime": "15:10", "zone": "Central" }
+      ],
+      "notes": "Afternoon return trip may be delayed after the 15:00 shift change."
+    },
+    {
+      "id": "SB-104",
+      "name": "City Circle Bus",
+      "driverName": "Ifeanyi Bello",
+      "departureTime": "07:00",
+      "destination": "Terminal Square",
+      "routeType": "Both",
+      "region": "Central",
+      "morningSchedule": [
+        { "time": "07:00", "stop": "Hostel Gate" },
+        { "time": "07:15", "stop": "Market Loop" },
+        { "time": "07:30", "stop": "Terminal Square" }
+      ],
+      "afternoonSchedule": [
+        { "time": "15:20", "stop": "Terminal Square" },
+        { "time": "15:35", "stop": "Market Loop" },
+        { "time": "15:50", "stop": "Hostel Gate" }
+      ],
+      "stops": [
+        { "name": "Hostel Gate", "arrivalTime": "07:00", "zone": "Central" },
+        { "name": "Market Loop", "arrivalTime": "07:15", "zone": "Central" },
+        { "name": "Terminal Square", "arrivalTime": "07:30", "zone": "Central" }
+      ],
+      "notes": "Serves both shift changeovers and may carry extra passengers on Fridays."
+    },
+    {
+      "id": "SB-105",
+      "name": "Sports Link Bus",
+      "driverName": "Mojisola Sanni",
+      "departureTime": "06:55",
+      "destination": "Sports Arena",
+      "routeType": "Afternoon",
+      "region": "South",
+      "morningSchedule": [
+        { "time": "06:55", "stop": "Main Gate" },
+        { "time": "07:10", "stop": "Sports Arena" }
+      ],
+      "afternoonSchedule": [
+        { "time": "14:50", "stop": "Sports Arena" },
+        { "time": "15:05", "stop": "Main Gate" },
+        { "time": "15:20", "stop": "Terminal Square" }
+      ],
+      "stops": [
+        { "name": "Main Gate", "arrivalTime": "06:55", "zone": "Central" },
+        { "name": "Sports Arena", "arrivalTime": "07:10", "zone": "South" },
+        { "name": "Terminal Square", "arrivalTime": "15:20", "zone": "Central" }
+      ],
+      "notes": "Popular with staff leaving the campus grounds late in the day."
+    }
+  ],
+  "busStops": [
+    { "id": "stop-1", "name": "Main Gate", "zone": "Central" },
+    { "id": "stop-2", "name": "Finance Block", "zone": "Central" },
+    { "id": "stop-3", "name": "Admin Annex", "zone": "West" },
+    { "id": "stop-4", "name": "Health Center", "zone": "East" },
+    { "id": "stop-5", "name": "Library Junction", "zone": "North" },
+    { "id": "stop-6", "name": "Engineering Hall", "zone": "East" },
+    { "id": "stop-7", "name": "Science Complex", "zone": "East" },
+    { "id": "stop-8", "name": "Hostel Gate", "zone": "Central" },
+    { "id": "stop-9", "name": "Market Loop", "zone": "Central" },
+    { "id": "stop-10", "name": "Staff Quarters", "zone": "West" },
+    { "id": "stop-11", "name": "Sports Arena", "zone": "South" },
+    { "id": "stop-12", "name": "Terminal Square", "zone": "Central" }
+  ]
+}
